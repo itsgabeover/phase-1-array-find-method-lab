@@ -61,11 +61,11 @@ const record = [
 ]
 
 function superbowlWin(recordArray) {
-    const winningYear = recordArray.find(objElement => objElement.result === "W");
-    if (winningYear === undefined) {
+    const winningObject = recordArray.find(objElement => objElement.result === "W");
+    if (winningObject === undefined) {
         return undefined;
     }
-    else if (winningYear.result === "W") {
-        return winningYear.year;
+    else {
+        return winningObject.year;
     }
 }
